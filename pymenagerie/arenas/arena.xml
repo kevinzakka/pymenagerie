@@ -1,0 +1,6 @@
+<mujoco model="arena">
+
+  <compiler exactmeshinertia="true" />
+  <option cone="elliptic" />
+
+</mujoco>
