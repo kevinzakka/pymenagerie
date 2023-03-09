@@ -19,10 +19,11 @@ with open(_here / name / "__init__.py") as f:
 with open(_here / "README.md", "r") as f:
     readme = f.read()
 
-# Minimum requirements for nanorl to import and run.
+# Minimum requirements to import and run.
 core_requirements = [
     "dm_control>=1.0.10",
     "mujoco>=2.3.2",
+    "mujoco_utils>=0.0.3",
 ]
 
 # Requirements for testing.

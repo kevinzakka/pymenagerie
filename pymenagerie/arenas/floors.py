@@ -1,11 +1,13 @@
 """Floor arenas."""
 
-from pymenagerie.arenas import base
+from mujoco_utils import composer_utils
 
+# This specifies the spacing between the grid subdivisions of the plane for rendering
+# purposes.
 _GROUNDPLANE_QUAD_SIZE = 0.05
 
 
-class CheckeredFloor(base.Arena):
+class CheckeredFloor(composer_utils.Arena):
     """An arena with a checkered ground plane."""
 
     def _build(
